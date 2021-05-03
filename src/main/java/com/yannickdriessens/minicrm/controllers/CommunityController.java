@@ -49,6 +49,17 @@ public class CommunityController {
         return "redirect:/communities/";
     }
 
+    @GetMapping("/communities/create")
+    public String createNewCommunity(){
+        return "communities/newCommunity";
+    }
+
+    @PostMapping("/communities/create")
+    public String createCommunity(HttpServletRequest request){
+        communityService.createNewCommunity(request);
+        return "redirect:/communities/";
+    }
+
 
 
 }

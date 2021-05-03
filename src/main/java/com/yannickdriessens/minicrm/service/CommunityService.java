@@ -34,4 +34,11 @@ public class CommunityService {
         return communityRepository.findById(id).get();
     }
 
+    public Community createNewCommunity(HttpServletRequest request){
+        Community community = new Community();
+        community.setDescription(request.getParameter("communityDescription"));
+        communityRepository.save(community);
+        return community;
+    }
+
 }
