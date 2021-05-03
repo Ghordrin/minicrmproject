@@ -11,12 +11,7 @@ import java.util.List;
 public interface CommunityRepository extends CrudRepository<Community, Long> {
 
     List<Community> findByDescription(String description);
-
-    @Query(value = "select count(m) from Member m where m.Id = :id")
-    int findAllPersonsInCommunity(@Param("id") long id);
-
     List<Community> findAll();
-
     Community findById(long id);
 }
 

@@ -8,7 +8,7 @@ import java.util.List;
 public class Community {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long ID;
+    private long ID;
 
     @ManyToMany(mappedBy = "member")
     private List<Person> member;
@@ -21,11 +21,11 @@ public class Community {
         this.description = description;
     }
 
-    public Long getID() {
+    public long getID() {
         return ID;
     }
 
-    public void setID(Long ID) {
+    public void setID(long ID) {
         this.ID = ID;
     }
 

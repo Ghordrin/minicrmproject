@@ -20,6 +20,7 @@ public class MinicrmApplication {
     public static void main(String[] args) {
         SpringApplication.run(MinicrmApplication.class);
     }
+/*
 
     @Bean
     public CommandLineRunner demoMiniCRM(PersonRepository personRepository,
@@ -214,6 +215,7 @@ public class MinicrmApplication {
         log.info(member.toString());
         log.info("");
     }
+*/
 
 
 }

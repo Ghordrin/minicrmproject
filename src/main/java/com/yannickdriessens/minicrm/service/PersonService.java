@@ -20,6 +20,14 @@ public class PersonService {
         return personRepository.findAll();
     }
 
+    public Person getPersonById(long id){
+        return personRepository.findById(id);
+    }
+
+    public Person updatePerson(Person person){
+        return personRepository.save(person);
+    }
+
     public Person createNewPerson(Person person, Address address, HttpServletRequest request){
         String firstName = "";
         String lastName = "";

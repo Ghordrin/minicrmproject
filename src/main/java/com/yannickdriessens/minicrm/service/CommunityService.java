@@ -5,6 +5,7 @@ import com.yannickdriessens.minicrm.model.Person;
 import com.yannickdriessens.minicrm.persistence.CommunityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
@@ -19,6 +20,10 @@ public class CommunityService {
 
     public List<Community> getCommunityList(){
         return communityRepository.findAll();
+    }
+
+    public Community saveCommunityById(Community community){
+        return communityRepository.save(community);
     }
 
     public Community addNewCommunity(String description){

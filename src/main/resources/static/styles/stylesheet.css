@@ -1,0 +1,59 @@
+.card{
+    height: 300px;
+    border: 2px solid #333333 !important;
+}
+
+.card-title{
+    height: 140px !important;
+}
+
+/* Links */
+a,
+a:focus{
+    size: 16px;
+    text-transform: uppercase;
+    color: #588086;
+    text-decoration: none;
+}
+
+
+a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-bottom: 3px solid #494958;
+    transition: 0.4s;
+}
+
+a:hover:after {
+    width: 100%;
+    color: black;
+}
+
+label{
+    size: 24px !important;
+}
+
+input{
+    size: 24px !important;
+    color: #588086;
+    text-decoration: none;
+    border: none;
+}
+
+input:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-bottom: 3px solid #494958;
+    transition: 0.4s;
+}
+
+input:hover:after{
+    width: 100%;
+    color: black;
+}
